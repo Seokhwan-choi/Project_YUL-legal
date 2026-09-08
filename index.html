@@ -26,14 +26,14 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             background-color: var(--bg-body);
             color: var(--text-main);
-            line-height: 1.7;
+            line-height: 1.75;
             word-break: keep-all;
             word-wrap: break-word;
             padding: 24px 16px;
         }
 
         .container {
-            max-width: 860px;
+            max-width: 880px;
             margin: 0 auto;
             background-color: var(--bg-card);
             border-radius: 12px;
@@ -129,11 +129,11 @@
         }
 
         h2 {
-            font-size: 1.15rem;
+            font-size: 1.2rem;
             color: #0f172a;
-            margin-top: 32px;
-            margin-bottom: 12px;
-            padding-bottom: 6px;
+            margin-top: 36px;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
             border-bottom: 2px solid var(--border);
         }
 
@@ -142,22 +142,22 @@
         }
 
         h3 {
-            font-size: 1.02rem;
+            font-size: 1.05rem;
             color: #334155;
-            margin-top: 20px;
-            margin-bottom: 8px;
+            margin-top: 22px;
+            margin-bottom: 10px;
         }
 
         p {
             margin-bottom: 12px;
-            font-size: 0.93rem;
+            font-size: 0.94rem;
             color: #334155;
         }
 
         ul, ol {
             margin-bottom: 14px;
-            padding-left: 22px;
-            font-size: 0.93rem;
+            padding-left: 24px;
+            font-size: 0.94rem;
             color: #334155;
         }
 
@@ -168,7 +168,7 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 14px 0 18px;
+            margin: 16px 0 20px;
             font-size: 0.88rem;
         }
 
@@ -179,22 +179,32 @@
         th {
             background-color: var(--table-header);
             font-weight: 600;
-            padding: 10px;
+            padding: 10px 12px;
             text-align: left;
         }
 
         td {
-            padding: 10px;
+            padding: 10px 12px;
             vertical-align: top;
         }
 
         .notice-box {
             background-color: #f0fdf4;
             border-left: 4px solid #22c55e;
-            padding: 12px 14px;
-            margin: 14px 0;
-            font-size: 0.9rem;
+            padding: 12px 16px;
+            margin: 16px 0;
+            font-size: 0.92rem;
             color: #166534;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .danger-box {
+            background-color: #fef2f2;
+            border-left: 4px solid #ef4444;
+            padding: 12px 16px;
+            margin: 16px 0;
+            font-size: 0.92rem;
+            color: #991b1b;
             border-radius: 0 6px 6px 0;
         }
 
@@ -240,56 +250,70 @@
 
         <!-- ================= [KO] 한국어 개인정보 처리방침 ================= -->
         <div id="view-ko-privacy" class="section-view active">
-            <h2>1. 개인정보 처리방침의 의의</h2>
-            <p>TheDuckGames(이하 ‘회사’)는 이용자에게 모바일 게임 애플리케이션 서비스(이하 ‘서비스’)를 제공하기 위하여 아래와 같이 이용자의 개인정보를 처리합니다.</p>
-            <p>회사는 「개인정보 보호법」 등 관련 법령을 준수하며, 이용자의 권익 보호를 위해 최선을 다하고 있습니다. 본 방침은 앱 내 설정 메뉴 및 공식 웹페이지에 공개하여 상시 열람 가능하도록 조치하고 있습니다.</p>
+            <h2>1. 개인정보처리방침의 의의</h2>
+            <p>TheDuckGames(이하 ‘회사’)는 이용자에게 회사의 모바일 게임 애플리케이션 서비스(이하 ‘서비스’) 제공을 위하여 아래와 같이 이용자의 개인정보를 수집 및 처리합니다.</p>
+            <p>회사는 이용자의 개인정보를 소중히 다루며, 「개인정보 보호법」 등 정보통신서비스제공자가 준수하여야 할 관련 법령상의 개인정보보호 규정을 준수하고 있습니다. 본 개인정보처리방침은 ‘게임 내 설정 &gt; 개인정보처리방침 메뉴’ 및 공식 웹페이지에 공개하여 상시 열람 가능하도록 조치하고 있습니다.</p>
+            <p>회사는 필요에 의하여 개인정보처리방침을 개정하는 경우 최소 7일 전(중대한 사항 변경 시 30일 전)에 공지합니다.</p>
 
-            <h2>2. 수집하는 개인정보 항목 및 방법</h2>
-            <h3>가. 수집하는 항목</h3>
-            <ol>
-                <li><strong>계정 연동 시:</strong> 플랫폼 계정(Google Play Games, Apple Game Center 등) 연동 시 제공되는 고유 식별자(UID), 이메일, 닉네임 (게스트 로그인 시 임의 기기 식별자)</li>
+            <h2>2. 수집하는 개인 정보 항목 및 방법</h2>
+            <p>회사는 회원 식별, 서비스 제공 및 품질 개선, 인게임 광고 송출, 고객 상담을 위해 필요한 최소한의 정보만을 수집합니다.</p>
+            
+            <h3>1) 수집 항목</h3>
+            <ul>
+                <li><strong>계정 식별 정보:</strong>
+                    <ul>
+                        <li>플랫폼 연동 시: Google Play Games 또는 Apple Game Center의 고유 회원 식별자(UID), 이메일, 닉네임</li>
+                        <li><strong>Firebase 익명(게스트) 로그인 이용 시:</strong> Firebase Authentication에서 자동 발급되는 고유 회원 식별자(Firebase UID)</li>
+                    </ul>
+                </li>
                 <li><strong>서비스 이용 및 광고 게재 과정에서 자동 수집되는 정보:</strong>
                     <ul>
-                        <li>기기 정보: 기기 모델명, OS 버전, 언어 및 국가 설정</li>
-                        <li>광고 식별자: ADID (Android), IDFA (iOS) (Unity LevelPlay / ironSource 미디에이션 및 맞춤형 광고 제공용)</li>
+                        <li>기기 정보: 기기 모델명, OS 버전, 하드웨어 사양, 시스템 언어 및 국가 설정</li>
+                        <li><strong>광고 식별자:</strong> Google ADID (Android), Apple IDFA (iOS) (Unity LevelPlay / ironSource 미디에이션 및 광고 게재용)</li>
                         <li>서비스 이용 기록: 접속 일시, 게임 플레이 데이터, 오류 및 충돌 로그</li>
                     </ul>
                 </li>
-                <li><strong>인앱 결제 시:</strong> 주문 번호, 결제 일시, 구매 상품명, 영수증 검증 데이터 (※ 신용카드 정보 등 실제 결제 수단 정보는 Apple/Google 스토어가 직접 처리하며 회사는 수집·저장하지 않음)</li>
+                <li><strong>인앱 결제 시:</strong> 주문 번호, 결제 일시, 구매 상품명, 영수증 검증 데이터 (※ 신용카드 정보 등 실제 결제 수단 정보는 Apple/Google 스토어가 직접 처리하며 회사에는 일절 저장되지 않습니다)</li>
                 <li><strong>고객 문의 시:</strong> 이메일 주소, 문의 내용 및 상담 내역</li>
-            </ol>
-            <h3>나. 수집 방법</h3>
-            <p>앱 설치 및 실행 중 자동 수집, 계정 연동 및 고객 상담 접수 시 이용자 제공</p>
-
-            <h2>3. 개인정보의 이용 목적</h2>
-            <ul>
-                <li>게임 서비스 제공 및 플레이 데이터 동기화</li>
-                <li><strong>Unity LevelPlay (ironSource) 및 연동 광고 네트워크(AdMob, Meta, Mintegral)를 통한 인게임 광고 게재 및 최적화</strong></li>
-                <li>오류 수정, 앱 안정성 개선 및 고객 불만 응대</li>
-                <li>비인가 프로그램 사용 방지 등 부정 이용 방지</li>
-                <li>인앱 구매 상품 지급 및 영수증 유효성 검증</li>
             </ul>
 
-            <h2>4. 제3자 서비스 및 외부 광고 라이브러리(SDK)</h2>
-            <p>회사는 안정적인 게임 구동과 무료 서비스 제공을 위한 인게임 광고 게재 목적으로 아래와 같은 제3자 전문 서비스를 사용하며, 해당 서비스에 최소한의 데이터가 제공될 수 있습니다.</p>
+            <h3>2) 수집 방법</h3>
+            <p>앱 설치 및 실행 중 자동 수집, 계정 연동 및 고객 상담 접수 시 이용자 제공</p>
+
+            <h2>3. 수집한 개인정보의 이용 목적</h2>
+            <ul>
+                <li>게임 서비스 제공, 진행 상태 저장 및 Firebase 클라우드 데이터 동기화</li>
+                <li><strong>Unity LevelPlay (ironSource) 및 연동 광고 네트워크(AdMob, Meta, Mintegral)를 통한 인게임 무료 광고 게재 및 최적화</strong></li>
+                <li>오류 수정, 앱 안정성 개선 및 고객 불만 응대</li>
+                <li>비인가 매크로/치트 프로그램 사용 방지, 비정상적 데이터 변조 탐지 등 부정 이용 방지</li>
+                <li>인앱 구매 상품 지급 및 스토어 영수증 유효성 검증</li>
+            </ul>
+
+            <h2>4. 개인정보의 제공(공유) 및 위탁</h2>
+            <p>회사는 원칙적으로 이용자의 사전 동의 없이 개인정보를 외부에 제공하지 않습니다. 회사는 안정적인 글로벌 서비스 운영 및 인게임 광고 제공을 위하여 아래와 같이 전문 외부 서비스 SDK를 탑재하고 있습니다.</p>
             <table>
                 <thead>
-                    <tr><th>제공 대상 (SDK)</th><th>이용 목적</th><th>수집/처리 항목</th></tr>
+                    <tr><th>수탁업체 (SDK)</th><th>위탁 업무 내용</th><th>수집/처리 항목</th></tr>
                 </thead>
                 <tbody>
                     <tr>
+                        <td><strong>Google LLC</strong><br>(Firebase Auth & Cloud)</td>
+                        <td>회원 인증(Firebase 익명 로그인 및 소셜 로그인), 클라우드 게임 데이터 저장 및 동기화</td>
+                        <td>Firebase 회원 UID, 접속 일시, 게임 저장 데이터</td>
+                    </tr>
+                    <tr>
                         <td><strong>Unity Technologies /<br>ironSource Mobile Ltd.</strong><br>(Unity LevelPlay / ironSource Ads)</td>
-                        <td>게임 엔진 구동 및 광고 미디에이션 플랫폼(LevelPlay / ironSource) 운영</td>
-                        <td>기기 식별자, OS 정보, 광고 식별자(ADID/IDFA), 충돌 로그, 광고 참여 데이터</td>
+                        <td>게임 엔진 구동 및 모바일 광고 미디에이션(LevelPlay / ironSource) 플랫폼 운영</td>
+                        <td>기기 사양 정보, OS 버전, 광고 식별자(ADID/IDFA), 충돌 로그, 광고 참여 데이터</td>
                     </tr>
                     <tr>
                         <td><strong>Google LLC</strong><br>(Google AdMob / Play Games)</td>
-                        <td>계정 로그인, 인앱 광고 게재 및 분석</td>
+                        <td>구글 계정 연동, 인앱 광고 게재 및 분석</td>
                         <td>광고 식별자, IP 주소, 기기 모델, 광고 인터랙션 정보</td>
                     </tr>
                     <tr>
                         <td><strong>Meta Platforms, Inc.</strong><br>(Meta Audience Network)</td>
-                        <td>맞춤형 인게임 광고 게재</td>
+                        <td>맞춤형 인게임 광고 게재 및 최적화</td>
                         <td>광고 식별자, 기기 및 OS 정보, 광고 노출/클릭 데이터</td>
                     </tr>
                     <tr>
@@ -299,161 +323,179 @@
                     </tr>
                     <tr>
                         <td><strong>Apple Inc.</strong><br>(Game Center / App Store)</td>
-                        <td>계정 로그인, 인앱 결제 검증</td>
+                        <td>애플 계정 연동, 인앱 결제 영수증 유효성 검증</td>
                         <td>Apple 계정 식별자, 결제 영수증 식별값</td>
                     </tr>
                 </tbody>
             </table>
 
             <h2>5. 개인정보의 보유 및 파기</h2>
-            <p>회사는 개인정보 수집 목적이 달성되면 지체 없이 파기합니다. 단, 전자상거래법 등 관계 법령에 따라 보존 의무가 있는 경우 법정 기간(대금결제/계약 기록 5년, 분쟁 처리 3년, 접속 로그 3개월) 동안 안전하게 보관 후 파기합니다.</p>
+            <p>이용자의 개인정보는 수집 및 이용 목적이 달성되면 지체 없이 파기됩니다. 회원이 탈퇴를 신청한 경우 최대 7일간의 유예기간 후 완전히 파기됩니다. 단, 전자상거래법 등 관계 법령에 따라 대금결제/계약 기록은 5년, 소비자의 불만 및 분쟁 처리 기록은 3년, 접속 로그는 3개월간 보관 후 파기합니다.</p>
 
             <h2>6. 이용자의 권리와 행사 방법 (계정 및 데이터 삭제)</h2>
             <div class="notice-box">
-                <strong>계정 및 데이터 삭제 권리 안내:</strong><br>
-                이용자는 언제든지 자신의 개인정보 열람, 정정, 삭제(회원 탈퇴)를 요구할 권리가 있습니다.
+                <strong>계정 및 개인정보 영구 삭제 안내 (Firebase 익명 계정 포함):</strong><br>
+                소셜 연동 계정뿐만 아니라 Firebase 익명(게스트) 계정을 사용하는 이용자 역시 언제든지 자신의 데이터 삭제 및 회원 탈퇴를 요구할 권리가 있습니다.
             </div>
-            <ul>
-                <li><strong>앱 내 탈퇴:</strong> 게임 내 설정 메뉴의 '계정 삭제' 또는 '회원 탈퇴' 기능을 통해 즉시 삭제 신청 가능</li>
-                <li><strong>이메일 요청:</strong> 앱 삭제 등으로 직접 탈퇴가 곤란한 경우, 아래 책임자 이메일로 요청하시면 본인 확인 후 즉시 파기 조치합니다.</li>
-            </ul>
+            <ol>
+                <li>이용자는 게임 내 ‘설정 &gt; 계정 삭제(회원 탈퇴)’ 메뉴를 통해 즉시 탈퇴 신청이 가능하며, 신청 완료 시 서버에 보관된 Firebase UID 및 연동 게임 데이터가 파기됩니다.</li>
+                <li>앱 삭제 등으로 인게임 탈퇴가 불가능한 경우, 아래의 개인정보 보호책임자 이메일로 요청하시면 본인 확인 절차를 거쳐 지체 없이 데이터를 파기해 드립니다.</li>
+                <li>회사는 만 14세 미만의 아동의 개인정보를 법정대리인의 동의 없이 의도적으로 수집 및 이용하지 않으며, 인지 시 즉시 파기합니다.</li>
+            </ol>
 
-            <h2>7. 아동의 개인정보 보호</h2>
-            <p>회사는 만 14세 미만 아동의 개인정보를 법정대리인의 동의 없이 의도적으로 수집하지 않으며, 해당 정보 인지 시 즉시 파기합니다.</p>
+            <h2>7. 기술적 및 관리적 보호 대책</h2>
+            <p>회사는 개인정보의 유출을 방지하기 위하여 통신 구간 암호화(HTTPS/SSL), 비인가 접근 통제 시스템을 적용하고 있으며, 취급 인원을 최소화하여 관리하고 있습니다.</p>
 
-            <h2>8. 개인정보 보호책임자 및 문의처</h2>
+            <h2>8. 개인정보보호 책임자 및 연락처</h2>
             <table>
-                <tr><th style="width:30%;">개인정보 보호 책임자</th><td>최석환 (TheDuckGames)</td></tr>
+                <tr><th style="width:30%;">개인정보 보호 책임자</th><td>최석환 (TheDuckGames 대표)</td></tr>
                 <tr><th>문의 이메일</th><td><a href="mailto:stannum514@gmail.com">stannum514@gmail.com</a></td></tr>
             </table>
         </div>
 
-        <!-- ================= [KO] 한국어 서비스 이용약관 (30개 조항) ================= -->
+        <!-- ================= [KO] 한국어 서비스 이용약관 (개발사 방어력 극대화 30개 조항) ================= -->
         <div id="view-ko-terms" class="section-view">
             <h2>제1조 (목적)</h2>
-            <p>이 약관은 TheDuckGames(이하 “회사”라 합니다)가 모바일 기기를 통해 제공하는 게임 서비스 및 이에 부수하는 제반 서비스(이하 “서비스”라 합니다)의 이용에 대한 회사와 서비스 이용자의 권리ㆍ의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.</p>
+            <p>이 약관은 TheDuckGames (이하 “회사”라 합니다)가 모바일 기기를 통해 제공하는 게임 서비스 및 이에 부수하는 네트워크, 웹사이트, 기타 제반 서비스(이하 “서비스”라 합니다)의 이용에 대한 회사와 서비스 이용자의 권리ㆍ의무 및 책임사항을 규정함을 목적으로 합니다.</p>
 
             <h2>제2조 (용어의 정의)</h2>
             <p>① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.</p>
             <ol>
                 <li>“회사”라 함은 모바일 기기를 통하여 서비스를 제공하는 사업자를 의미합니다.</li>
                 <li>“회원”이란 이 약관에 따라 이용계약을 체결하고, 회사가 제공하는 서비스를 이용하는 자를 의미합니다.</li>
-                <li>“모바일 기기”란 콘텐츠를 다운로드 받거나 설치하여 사용할 수 있는 스마트폰, 태블릿 등을 의미합니다.</li>
-                <li>“콘텐츠”란 모바일 기기로 이용할 수 있도록 회사가 디지털 방식으로 제작한 유무료의 내용물 일체(게임, 아이템, 게임머니 등)를 의미합니다.</li>
+                <li>“임시회원”이란 일부 정보만 제공하고 회사가 제공하는 서비스의 일부만 이용하는 자(게스트/Firebase 익명 로그인 이용자 포함)를 의미합니다.</li>
+                <li>“콘텐츠”란 모바일 기기로 이용할 수 있도록 회사가 디지털 방식으로 제작한 유료 또는 무료의 내용물 일체(게임, 재화, 아이템 등)를 의미합니다.</li>
                 <li>“오픈마켓”이란 모바일 기기에서 게임 콘텐츠를 다운로드하고 결제할 수 있는 전자상거래 환경(Google Play Store, Apple App Store 등)을 의미합니다.</li>
             </ol>
 
             <h2>제3조 (회사정보 등의 제공)</h2>
-            <p>회사는 상호, 대표자 성명, 전자우편주소, 개인정보처리방침 및 서비스 이용약관을 회원이 쉽게 알 수 있도록 게임 서비스 내 또는 연결화면에 게시합니다.</p>
+            <p>회사는 상호, 대표자 성명, 전자우편주소, 개인정보처리방침 및 서비스 이용약관을 게임 서비스 내 또는 공식 웹페이지에 게시합니다.</p>
 
             <h2>제4조 (약관의 효력 및 변경)</h2>
-            <p>① 회사는 이 약관의 내용을 회원이 알 수 있도록 게임 서비스 내 또는 공식 웹페이지에 게시합니다.</p>
-            <p>② 회사가 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 최소 7일 이전(중대한 변경이나 회원에게 불리한 변경의 경우 30일 이전)부터 게임 내 공지사항 또는 웹페이지를 통해 공지합니다.</p>
+            <p>① 회사는 이 약관의 내용을 게임 서비스 내 또는 웹페이지에 게시하여 공지합니다.</p>
+            <p>② 회사가 약관을 개정할 경우에는 적용일자 최소 7일 전(중대한 변경이나 회원에게 불리한 변경의 경우 30일 전)에 공지합니다. 회원이 개정 약관의 효력 발생일까지 거부 의사를 표시하지 않는 경우 개정 약관에 동의한 것으로 봅니다.</p>
 
-            <h2>제5조 (이용계약의 체결 및 승낙)</h2>
-            <p>이용계약은 회원이 되고자 하는 자가 앱을 설치 및 실행하여 약관의 내용에 동의함으로써 체결됩니다. 부정한 용도나 영리 목적, 법령 위반을 목적으로 하는 경우 승낙이 제한될 수 있습니다.</p>
+            <h2>제5조 (이용계약의 체결 및 적용)</h2>
+            <p>이용계약은 회원이 앱을 설치 및 실행하여 약관에 동의함으로써 성립됩니다. 회사는 부정한 용도, 작업장 운영, 비인가 프로그램 사용 목적이 의심되는 경우 승낙을 거절하거나 사후에 계약을 해지할 수 있습니다.</p>
 
             <h2>제6조 (약관 외 준칙)</h2>
-            <p>이 약관에서 정하지 아니한 사항은 「전자상거래 등에서의 소비자보호에 관한 법률」, 「약관의 규제에 관한 법률」, 「게임산업진흥에 관한 법률」 등 관련 법령 또는 상 관례에 따릅니다.</p>
+            <p>이 약관에서 정하지 아니한 사항은 관계 법령 및 상관례에 따릅니다.</p>
 
             <h2>제7조 (운영정책)</h2>
-            <p>회사는 약관을 적용하기 위하여 필요한 세부 사항을 게임서비스 운영정책으로 정할 수 있으며, 이를 게임 내 또는 연결화면에 게시합니다.</p>
+            <p>회사는 게임 질서 유지 및 서비스 운영을 위해 세부적인 게임 운영정책을 수립하여 시행할 수 있습니다.</p>
 
             <h2>제8조 (개인정보의 보호 및 사용)</h2>
-            <p>회원의 개인정보 보호 및 사용에 대해서는 관련 법령 및 회사가 별도로 고지하는 개인정보처리방침에 따릅니다.</p>
+            <p>회원의 개인정보 보호에 관한 사항은 관련 법령 및 회사의 개인정보처리방침에 따릅니다.</p>
 
             <h2>제9조 (회사의 의무)</h2>
-            <p>회사는 법령과 본 약관이 금지하거나 미풍양속에 반하는 행위를 하지 않으며, 계속적이고 안정적으로 서비스를 제공하기 위하여 최선을 다합니다.</p>
+            <p>회사는 계속적이고 안정적인 서비스 제공을 위해 최선을 다합니다.</p>
 
-            <h2>제10조 (회원의 의무 및 금지행위)</h2>
-            <p>회원은 서비스 이용과 관련하여 다음 각 호의 행위를 하여서는 안 됩니다.</p>
-            <ul>
-                <li>버그 악용, 데이터 조작, 비인가 매크로/치트 프로그램 사용 행위</li>
-                <li>타인의 개인정보 또는 결제 정보를 도용하는 행위</li>
-                <li>회사 및 타인의 지적재산권을 침해하거나 명예를 훼손하는 행위</li>
-                <li>사이버 자산(계정, 아이템 등)의 불법적인 현금 거래 행위</li>
-                <li>클라이언트 역설계, 소스코드 유출 또는 서버 해킹 시도 행위</li>
-            </ul>
+            <h2>제10조 (회원의 의무 및 엄격한 금지행위)</h2>
+            <div class="danger-box">
+                <strong>금지행위 적발 시 무통보 영구 이용제한 안내:</strong><br>
+                회원은 서비스 이용 시 아래 각 호의 행위를 하여서는 안 되며, 위반 시 사전 통지 없이 계정이 영구 정지될 수 있습니다.
+            </div>
+            <ol>
+                <li>알려지거나 알려지지 않은 버그를 악용하여 부당한 이득을 취하는 행위</li>
+                <li>치트 프로그램, 매크로, 자동 사냥 프로그램, 메모리 변조 툴 등 비인가 프로그램을 제작, 유포, 사용하는 행위</li>
+                <li>클라이언트 애플리케이션을 역설계(리버스 엔지니어링), 디컴파일하거나 소스코드를 추출하는 행위</li>
+                <li>오픈마켓(Apple, Google)의 결제 및 환불 프로세스를 악용하여 결제 취소 후 아이템을 편취하는 행위(악의적 환불런)</li>
+                <li>사이버 자산(계정, 아이템, 재화)을 유상으로 양도, 매매하거나 대리 결제를 이용하는 행위</li>
+                <li>회사 및 제3자의 저작권 등 지적재산권을 침해하거나 명예를 훼손하는 행위</li>
+            </ol>
 
-            <h2>제11조 (서비스의 제공)</h2>
-            <p>회사는 이용계약이 완료된 회원에게 즉시 서비스를 이용할 수 있도록 합니다.</p>
+            <h2>제11조 ~ 제12조 (서비스의 제공 및 일시 정지)</h2>
+            <p>① 정기 점검, 서버 교체, 통신망 장애, 천재지변 등의 사유 발생 시 서비스가 일시 중지될 수 있습니다.</p>
+            <p>② 회원의 기기 변경, OS 변경, 루팅/탈옥 등으로 인하여 발생하는 서비스 장애에 대해 회사는 책임을 지지 않습니다.</p>
 
-            <h2>제12조 (서비스의 이용 및 일시 정지)</h2>
-            <p>정기점검, 설비 증설, 통신망 장애, 천재지변 등 부득이한 사유가 있는 경우 서비스의 전부 또는 일부가 일시 정지될 수 있으며, 사전에 공지합니다(불가피한 경우 사후 공지).</p>
+            <h2>제13조 (서비스의 변경, 밸런스 조정 및 면책)</h2>
+            <p>① 회사는 운영상, 기술상 필요에 따라 게임의 콘텐츠 및 시스템을 수시로 변경할 수 있습니다.</p>
+            <p><strong>② (게임 밸런스 패치에 관한 면책 특약)</strong> 회사는 게임의 밸런스 유지 및 원활한 환경 조성을 위해 캐릭터, 아이템, 스킬 등의 능력치나 효과를 수정·조정(상향 또는 하향 패치)할 수 있습니다. <u>이러한 밸런스 조정은 유료 콘텐츠의 하자가 아니며, 회원은 이를 이유로 유료 콘텐츠의 환불이나 손해배상을 청구할 수 없습니다.</u></p>
+            <p><strong>③ (서버 장애 및 롤백 보상에 관한 특약)</strong> 서버 장애, 버그 수정, 롤백 등으로 인하여 데이터 손실이 발생하는 경우, <u>회사는 게임 내 가상 재화 또는 아이템을 지급하는 것으로 갈음할 수 있으며, 현금 배상 의무를 지지 않습니다.</u> 보상의 수량과 지급 방식은 전적으로 회사의 정책에 따릅니다.</p>
 
-            <h2>제13조 (서비스의 변경 및 중단)</h2>
-            <p>회사는 운영상 또는 기술상의 필요에 따라 서비스를 변경할 수 있습니다. 경영상의 중대한 사유로 서비스를 영구 중단할 경우 최소 30일 전에 사전 공지하며 미사용 유료 아이템은 관련 법령에 따라 환급 조치합니다.</p>
-
-            <h2>제14조 (정보의 제공 및 확률형 아이템 표시)</h2>
-            <p>회사는 「게임산업진흥에 관한 법률」 등 관련 법령에 따라 표시 의무가 있는 확률형 아이템 정보를 게임 내 또는 연결화면에 알기 쉽게 표시합니다.</p>
-
-            <h2>제15조 (정보의 수집 등)</h2>
-            <p>회사는 서비스의 안정적인 운영을 위하여 단말기 사양 정보, 오류 로그 등을 수집할 수 있으며, 채팅 데이터는 분쟁 조정 및 질서 유지를 위한 목적에 한하여 열람·보관될 수 있습니다.</p>
-
-            <h2>제16조 (광고의 제공)</h2>
-            <p>회사는 무료 서비스 운영과 관련하여 서비스 내에 배너 광고, 전면 광고, 보상형 동영상 광고(Unity LevelPlay / ironSource, AdMob, Meta, Mintegral 등)를 게재할 수 있습니다.</p>
+            <h2>제14조 ~ 제16조 (정보 제공 및 인게임 광고)</h2>
+            <p>① 회사는 법령에 따른 확률형 아이템 정보를 게임 내에 알기 쉽게 표시합니다.</p>
+            <p>② 회사는 무료 서비스 제공을 위해 서비스 내에 서드파티 광고(Unity LevelPlay / ironSource, Google AdMob, Meta, Mintegral 등)를 게재할 수 있습니다.</p>
 
             <h2>제17조 (저작권 등의 귀속)</h2>
             <div class="notice-box">
-                <strong>지적재산권 귀속 및 이용제한 안내:</strong><br>
-                회사가 제작한 게임서비스 내 모든 콘텐츠(디자인, 그래픽, 사운드, 시나리오, 텍스트, 코드 등)에 대한 저작권 및 기타 지적재산권은 회사에 귀속됩니다.
+                <strong>지적재산권 독점 귀속 안내:</strong><br>
+                회사가 제작한 게임서비스 내 모든 콘텐츠(디자인, 캐릭터, 그래픽, 사운드, 시나리오, 코드 등)에 대한 저작권 및 기타 지적재산권은 전적으로 회사에 귀속됩니다.
             </div>
-            <p>① 회원은 회사가 제공하는 서비스를 이용하여 얻은 정보 중 지적재산권이 회사에 귀속된 정보를 사전 승낙 없이 복제, 전송, 배포, 2차적 저작물 작성 등의 방법으로 영리 목적으로 이용하거나 타인에게 이용하게 하여서는 안 됩니다.</p>
-            <p>② 회원이 게임 내에서 등록하는 대화 텍스트, 이미지 등 이용자 콘텐츠는 게임 서비스 운영, 개선, 홍보 목적으로 합리적인 범위 내에서 비독점적으로 활용될 수 있습니다.</p>
+            <p>① 회원은 회사의 사전 서면 승낙 없이 게임 내 콘텐츠를 복제, 배포, 2차 가공, 상업적 이용할 수 없습니다.</p>
+            <p>② 회원이 게임 내에서 게시하는 텍스트나 이용자 콘텐츠는 회사가 서비스 운영 및 홍보 목적으로 합리적인 범위 내에서 영구적·비독점적으로 무상 이용할 수 있습니다.</p>
 
-            <h2>제18조 (유료 콘텐츠의 구매 및 이용)</h2>
-            <p>회원이 구매한 유료 콘텐츠는 다운로드받은 모바일 기기 및 연동 계정에서 이용할 수 있으며, 이용기간은 구매 시 별도로 명시된 기간에 따릅니다.</p>
+            <h2>제18조 (유료 콘텐츠의 이용)</h2>
+            <p>회원이 구매한 유료 콘텐츠는 구매한 기기 및 계정에서만 이용할 수 있는 '비독점적 사용권'에 불과하며 소유권을 취득하는 것이 아닙니다.</p>
 
-            <h2>제19조 (회원에 대한 서비스 이용제한)</h2>
-            <p>회원이 제10조의 의무를 위반한 경우, 회사는 위반 정도에 따라 경고, 채팅 제한, 캐릭터/계정의 일시적 또는 영구 이용제한 조치를 취할 수 있습니다.</p>
-
-            <h2>제20조 ~ 제21조 (이용제한의 절차 및 이의신청)</h2>
-            <p>회사는 이용제한 시 사유와 유형을 통지하며, 회원은 통지를 받은 날부터 14일 이내에 이메일 등을 통해 이의신청을 제기할 수 있습니다.</p>
+            <h2>제19조 ~ 제21조 (이용제한 및 환불 악용 대응)</h2>
+            <p>① 회원이 제10조의 금지행위를 위반한 경우 회사는 경고, 채팅 금지, 기간 정지, 영구 이용제한 조치를 할 수 있습니다.</p>
+            <p><strong>② (악의적 환불에 대한 즉시 제재 및 구상권 특약)</strong> 회원이 오픈마켓(스토어)을 통해 정상적인 절차를 거치지 않고 결제를 취소하여 재화를 편취한 경우, <u>회사는 사전 통지 없이 해당 계정을 영구 정지하고, 지급된 유료 콘텐츠를 음수(마이너스) 처리하거나 회수할 수 있습니다.</u> 또한 고의적인 악용으로 회사에 손해가 발생한 경우 민·형사상 법적 조치(사기죄 고소 및 손해배상 청구)를 진행합니다.</p>
 
             <h2>제22조 (대금결제)</h2>
-            <p>콘텐츠 구매 대금의 부과와 납부는 오픈마켓 사업자(Apple, Google 등) 및 이동통신사에서 정하는 정책이나 방법에 따릅니다.</p>
+            <p>유료 콘텐츠 구매 대금은 오픈마켓(Apple, Google)의 결제 정책을 따르며, 외화 결제 시 환율 변동 및 수수료로 청구 금액에 차이가 있을 수 있습니다.</p>
 
-            <h2>제23조 (청약철회 및 환불)</h2>
-            <p>① 유료 콘텐츠를 구매한 회원은 구매일로부터 7일 이내에 청약철회를 할 수 있습니다.</p>
-            <p>② 단, 구매 즉시 사용되거나 개봉된 콘텐츠, 일부 사용된 패키지 상품 등 「전자상거래 등에서의 소비자보호에 관한 법률」에 따른 청약철회 제한 사유에 해당하는 상품은 환불이 제한됩니다.</p>
-            <p>③ 미성년자가 법정대리인의 동의 없이 결제한 경우 본인 또는 법정대리인은 해당 결제를 취소할 수 있습니다.</p>
+            <h2>제23조 (청약철회 및 환불 제한)</h2>
+            <p>① 회원이 구매한 유료 콘텐츠는 구매일로부터 7일 이내에 청약철회를 할 수 있습니다.</p>
+            <p><strong>② (청약철회 불가 상품)</strong> 다음 각 호에 해당하는 콘텐츠는 청약철회가 불가능합니다.</p>
+            <ol>
+                <li>구매 즉시 사용되거나 효력이 발생하는 아이템 (즉시 지급형 재화, 버프 등)</li>
+                <li>패키지 상품 중 일부라도 사용되거나 개봉된 경우</li>
+                <li>추가 혜택이 이미 소비된 콘텐츠</li>
+            </ol>
+            <p>③ 미성년자 결제 취소 시 회사는 법정대리인 확인을 위한 증빙 서류를 요구할 수 있으며, 법정대리인이 처분을 허락한 재산이거나 속임수로 성년자로 믿게 한 경우에는 취소가 제한됩니다.</p>
 
-            <h2>제24조 (과오납금의 환급)</h2>
-            <p>결제 과정에서 과오납금이 발생한 경우 오픈마켓 사업자 또는 회사의 환급 정책에 따라 처리됩니다.</p>
+            <h2>제24조 (과오납금 환급)</h2>
+            <p>과오납금은 오픈마켓 사업자의 환급 정책에 따라 처리됩니다.</p>
 
-            <h2>제25조 (계약 해지 및 회원 탈퇴)</h2>
-            <p>회원은 언제든지 앱 내 메뉴 또는 이메일을 통해 탈퇴(이용계약 해지)를 신청할 수 있으며, 탈퇴 시 게임 진행 정보는 삭제 처리됩니다.</p>
+            <h2>제25조 (계약 해지 및 서비스 종료)</h2>
+            <p>① 회원 탈퇴 시 계정에 보유한 게임 데이터는 영구 삭제되며 복구가 불가능합니다.</p>
+            <p><strong>② (서비스 종료 시 환불 범위 제한)</strong> 서비스 종료 시 환불 대상은 <u>서비스 종료 공지일 기준 30일 이내에 구매한 미사용 순수 유료 재화로 엄격히 한정</u>되며, 무료로 지급된 재화, 이벤트 아이템, 이미 개봉된 아이템은 환불 대상에서 완전히 제외됩니다.</p>
 
-            <h2>제26조 ~ 제27조 (손해배상 및 회사의 면책)</h2>
-            <p>회사는 천재지변, 정기점검, 회원의 고의/과실로 인한 서비스 이용 장애에 대하여 법령에 특별한 규정이 없는 한 책임을 지지 않습니다.</p>
+            <h2>제26조 (손해배상 책임의 한도 특약)</h2>
+            <p>① 회사 또는 회원이 본 약관을 위반하여 상대방에게 손해를 입힌 경우 배상할 책임이 있습니다.</p>
+            <p><strong>② (손해배상 한도액)</strong> 관련 법령이 허용하는 최대한의 범위 내에서, <u>회사의 귀책사유로 인해 회원에게 손해가 발생하더라도 회사의 총 배상 책임은 당해 회원이 직전 1개월 동안 서비스 내에서 실제로 결제한 총 누적 금액을 초과하지 않습니다.</u> 간접 손해, 특별 손해, 징벌적 손해에 대해 회사는 책임을 지지 않습니다.</p>
 
-            <h2>제28조 ~ 제30조 (통지, 관할법원 및 고충처리)</h2>
-            <p>약관과 관련된 분쟁은 대한민국 법률을 준거법으로 하며, 불편 사항이나 문의는 고객지원 이메일(<a href="mailto:stannum514@gmail.com">stannum514@gmail.com</a>)을 통해 성실히 처리해 드립니다.</p>
+            <h2>제27조 (회사의 면책 조항)</h2>
+            <ol>
+                <li>천재지변, 전시, 불가항력으로 인한 서비스 중단에 대해 책임을 지지 않습니다.</li>
+                <li>정기 점검, 서버 교체 등 부득이한 설비 보수로 인한 손해에 대해 고의 또는 중과실이 없는 한 책임을 지지 않습니다.</li>
+                <li>회원의 고의 또는 과실로 인한 계정 분실, 제3자 결제, 비밀번호 관리 부실에 대해 책임을 지지 않습니다.</li>
+                <li>회원이 서비스를 이용하여 기대한 수익이나 등급을 얻지 못한 것에 대해 책임을 지지 않습니다.</li>
+                <li>무료로 제공되는 서비스의 이용과 관련하여서는 고의 또는 중과실이 없는 한 책임을 지지 않습니다.</li>
+                <li>임시회원(게스트/익명 계정)이 기기 변경이나 앱 삭제로 데이터를 분실한 경우 회사는 복구 의무를 지지 않습니다.</li>
+            </ol>
+
+            <h2>제28조 ~ 제29조 (준거법 및 전속 합의 관할)</h2>
+            <p>① 본 약관은 대한민국 법률을 준거법으로 합니다.</p>
+            <p>② <strong>(관할법원 합의)</strong> 서비스 이용과 관련하여 회사와 회원 간에 발생하는 모든 분쟁에 관한 소송은 <u>민사소송법상의 관할 규정에도 불구하고 '회사 본점 소재지를 관할하는 법원'을 제1심 전속 관할 법원으로 합니다.</u></p>
+
+            <h2>제30조 (고객 문의)</h2>
+            <p>고객 문의: <a href="mailto:stannum514@gmail.com">stannum514@gmail.com</a></p>
         </div>
 
         <!-- ================= [EN] English Privacy Policy ================= -->
         <div id="view-en-privacy" class="section-view">
             <h2>1. Overview</h2>
-            <p>TheDuckGames ("Company", "we", "us", or "our") is dedicated to protecting your privacy. This Privacy Policy governs the collection, storage, and processing of your personal information when using our mobile game applications (the "Service").</p>
+            <p>TheDuckGames ("Company", "we", "us", or "our") is dedicated to protecting your privacy. This Privacy Policy governs the collection, storage, and processing of personal information when using our mobile applications (the "Service").</p>
 
             <h2>2. Information We Collect</h2>
             <ul>
-                <li><strong>Account Data:</strong> Platform User ID (UID), display name, and email via Google Play Games or Apple Game Center.</li>
-                <li><strong>Device & Usage Data:</strong> Device model, OS version, language/region settings, crash logs, and gameplay progress.</li>
-                <li><strong>Advertising Identifiers:</strong> Google ADID (Android) and Apple IDFA (iOS) for mobile ad mediation (LevelPlay / ironSource) and personalized advertising.</li>
+                <li><strong>Account Identifiers:</strong> Platform User ID (UID), email, and display name via Google Play Games / Apple Game Center, or randomized <strong>Firebase Authentication User IDs (UIDs) for anonymous/guest users</strong>.</li>
+                <li><strong>Device & Analytics:</strong> Device hardware, OS version, language, crash logs, and gameplay progress.</li>
+                <li><strong>Advertising IDs:</strong> Google ADID (Android) and Apple IDFA (iOS) for mobile ad mediation (Unity LevelPlay / ironSource) and advertising networks.</li>
                 <li><strong>Purchase Records:</strong> Transaction/Order ID, product name, and purchase tokens (Financial details are handled exclusively by Apple/Google).</li>
             </ul>
 
-            <h2>3. Purpose of Processing</h2>
-            <p>Data is used strictly to provide game features, save progress, serve in-game advertisements via mediation partners (Unity LevelPlay / ironSource) and ad networks, process store orders, fix bugs, prevent fraud/cheating, and address customer support inquiries.</p>
-
-            <h2>4. Third-Party Services & Ad Networks (SDKs)</h2>
-            <p>We work with trusted partners and ad mediation networks to deliver free-to-play features and advertisements:</p>
+            <h2>3. Third-Party Services & SDKs</h2>
             <table>
-                <thead>
-                    <tr><th>Service / SDK</th><th>Purpose</th><th>Data Collected</th></tr>
-                </thead>
+                <thead><tr><th>Provider</th><th>Purpose</th><th>Data Processed</th></tr></thead>
                 <tbody>
+                    <tr>
+                        <td><strong>Google LLC</strong><br>(Firebase Auth & Cloud)</td>
+                        <td>User authentication (anonymous & linked accounts) and game state storage</td>
+                        <td>Firebase User ID (UID), timestamps, cloud save data</td>
+                    </tr>
                     <tr>
                         <td><strong>Unity Technologies /<br>ironSource Mobile Ltd.</strong><br>(Unity Engine, LevelPlay & ironSource Ads)</td>
                         <td>Game engine operations and ad mediation platform (LevelPlay / ironSource)</td>
@@ -482,45 +524,45 @@
                 </tbody>
             </table>
 
-            <h2>5. Account & Data Deletion Rights</h2>
+            <h2>4. Account & Data Deletion Rights</h2>
             <div class="notice-box">
-                <strong>Right to Delete Account & Data:</strong><br>
-                You can permanently delete your account and associated gameplay data at any time via the in-game Settings > 'Delete Account' option, or by contacting us at <a href="mailto:stannum514@gmail.com">stannum514@gmail.com</a>.
+                <strong>Right to Delete Account & Data (Including Anonymous Users):</strong><br>
+                Both authenticated and Firebase anonymous (guest) users have the right to permanently delete their account and associated gameplay data at any time via in-game Settings > 'Delete Account' or by contacting us at <a href="mailto:stannum514@gmail.com">stannum514@gmail.com</a>.
             </div>
 
-            <h2>6. Contact Us</h2>
+            <h2>5. Contact Us</h2>
             <p>Privacy Representative: Seokhwan Choi (TheDuckGames) | Email: <a href="mailto:stannum514@gmail.com">stannum514@gmail.com</a></p>
         </div>
 
         <!-- ================= [EN] English Terms of Service ================= -->
         <div id="view-en-terms" class="section-view">
             <h2>Article 1 (Purpose & Acceptance)</h2>
-            <p>These Terms of Service ("Terms") govern your use of mobile games and associated services provided by TheDuckGames ("Company"). By installing or accessing the Service, you agree to be bound by these Terms.</p>
+            <p>These Terms of Service ("Terms") govern your use of the mobile games provided by TheDuckGames ("Company"). By accessing the Service, you agree to these Terms.</p>
 
             <h2>Article 2 (License & Intellectual Property Rights)</h2>
             <div class="notice-box">
-                <strong>Intellectual Property & Copyright Notice:</strong><br>
-                All rights, titles, and interests in and to the Service—including graphics, characters, code, designs, sound, music, and gameplay mechanics—are the exclusive property of TheDuckGames.
+                <strong>Exclusive Intellectual Property Notice:</strong><br>
+                All copyrights, trademarks, assets, graphics, code, and gameplay systems are the sole and exclusive property of TheDuckGames.
             </div>
-            <p>The Service is licensed, not sold, to you for non-commercial personal entertainment only. You may not copy, decompile, reverse-engineer, modify, or distribute any game assets without prior written consent.</p>
+            <p>The Service is licensed, not sold, for non-commercial personal entertainment only. You may not copy, reverse-engineer, decompile, or extract assets without prior written consent.</p>
 
-            <h2>Article 3 (In-App Purchases & Refunds)</h2>
-            <p>All in-app purchases are billed and processed through the respective platforms (Apple App Store, Google Play Store) according to their consumer protection and refund terms. Items consumed or activated upon receipt are generally non-refundable.</p>
+            <h2>Article 3 (Game Balance Adjustments & Rollbacks)</h2>
+            <p>The Company reserves the right to modify, balance, or nerf characters, stats, and virtual items to preserve game balance. Such balance updates do not constitute defects and are non-refundable. In the event of emergency server rollbacks, compensation is strictly limited to in-game virtual items determined at the Company's sole discretion.</p>
 
-            <h2>Article 4 (In-Game Advertisements)</h2>
-            <p>The Company may display advertisements within the Service via third-party mediation and ad networks (Unity LevelPlay / ironSource, Google AdMob, Meta, Mintegral). These ads support the continued provision of free game content.</p>
+            <h2>Article 4 (Fraudulent Refunds & Account Termination)</h2>
+            <div class="danger-box">
+                <strong>Zero-Tolerance Policy for Refund Exploitation:</strong><br>
+                Initiating unauthorized refunds through Apple or Google while keeping consumed items will result in immediate permanent account termination and negative balance adjustments. The Company reserves the right to pursue civil and criminal legal action for fraud.
+            </div>
 
-            <h2>Article 5 (User Conduct & Prohibited Acts)</h2>
-            <p>You agree not to engage in bug exploitation, illegal third-party automation/cheat tools, unauthorized commercial reselling of accounts/items, or harassment of other users. Violations may result in account termination.</p>
+            <h2>Article 5 (Limitation of Liability)</h2>
+            <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE COMPANY'S TOTAL CUMULATIVE LIABILITY ARISING FROM OR RELATED TO THE SERVICE SHALL NOT EXCEED THE ACTUAL AMOUNT PAID BY YOU TO THE COMPANY DURING THE ONE (1) MONTH IMMEDIATELY PRECEDING THE CLAIM.</p>
 
-            <h2>Article 6 (Disclaimer & Limitation of Liability)</h2>
-            <p>The Service is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind. The Company is not liable for indirect or consequential damages arising from maintenance, force majeure events, or device incompatibility.</p>
+            <h2>Article 6 (Governing Law & Jurisdiction)</h2>
+            <p>These Terms are governed by the laws of the Republic of Korea. Any disputes shall be submitted to the exclusive jurisdiction of the competent court having jurisdiction over the Company's registered address.</p>
 
-            <h2>Article 7 (Governing Law & Jurisdiction)</h2>
-            <p>These Terms are governed by and construed in accordance with the laws of the Republic of Korea.</p>
-
-            <h2>Article 8 (Contact Information)</h2>
-            <p>For questions or support regarding these Terms, please contact: <a href="mailto:stannum514@gmail.com">stannum514@gmail.com</a></p>
+            <h2>Article 7 (Contact Us)</h2>
+            <p>Support: <a href="mailto:stannum514@gmail.com">stannum514@gmail.com</a></p>
         </div>
 
     </div>
@@ -611,4 +653,3 @@
 
 </body>
 </html>
-```
