@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no">
+    <title>TheDuckGames - Policy & Terms</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #1e293b;
+            --text-sub: #64748b;
+            --border: #e2e8f0;
+            --table-header: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.65;
+            word-break: keep-all;
+            word-wrap: break-word;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #1e293b;
+            color: #ffffff;
+            padding: 20px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .header-title h1 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .header-title p {
+            font-size: 0.82rem;
+            color: #94a3b8;
+            margin-top: 4px;
+        }
+
+        .lang-switch {
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 2px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .lang-btn {
+            background: none;
+            border: none;
+            color: #cbd5e1;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .lang-btn.active {
+            background-color: #ffffff;
+            color: #0f172a;
+        }
+
+        .tab-bar {
+            display: flex;
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 14px 16px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-align: center;
+            color: var(--text-sub);
+            background: none;
+            border: none;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .tab-btn.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+            background-color: #f8fafc;
+        }
+
+        .content {
+            padding: 28px 20px;
+        }
+
+        .section-view {
+            display: none;
+        }
+
+        .section-view.active {
+            display: block;
+        }
+
+        h2 {
+            font-size: 1.15rem;
+            color: #0f172a;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 1.02rem;
+            color: #334155;
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            font-size: 0.93rem;
+            color: #334155;
+        }
+
+        ul, ol {
+            margin-bottom: 14px;
+            padding-left: 20px;
+            font-size: 0.93rem;
+            color: #334155;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 14px 0 18px;
+            font-size: 0.88rem;
+        }
+
+        table, th, td {
+            border: 1px solid var(--border);
+        }
+
+        th {
+            background-color: var(--table-header);
+            font-weight: 600;
+            padding: 10px;
+            text-align: left;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        .notice-box {
+            background-color: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            padding: 12px 14px;
+            margin: 14px 0;
+            font-size: 0.9rem;
+            color: #166534;
+            border-radius: 0 6px 6px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 16px;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem;
+            color: var(--text-sub);
+            background-color: #fafafa;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1 id="headerTitle">TheDuckGames 공식 정책 안내</h1>
+            <p id="headerDate">최종 개정일: 2026년 9월 8일</p>
+        </div>
+        <div class="lang-switch">
+            <button class="lang-btn active" id="btnKo" onclick="setLanguage('ko')">한국어</button>
+            <button class="lang-btn" id="btnEn" onclick="setLanguage('en')">English</button>
+        </div>
+    </header>
+
+    <div class="tab-bar">
+        <button class="tab-btn active" id="tabPrivacy" onclick="setTab('privacy')">개인정보 처리방침</button>
+        <button class="tab-btn" id="tabTerms" onclick="setTab('terms')">서비스 이용약관</button>
+    </div>
+
+    <div class="content">
+
+        <!-- ================= [KO] 한국어 개인정보 처리방침 ================= -->
+        <div id="view-ko-privacy" class="section-view active">
+            <h2>1. 개인정보 처리방침의 의의</h2>
+            <p>TheDuckGames(이하 ‘회사’)는 이용자에게 모바일 애플리케이션 서비스(이하 ‘서비스’)를 제공하기 위하여 아래와 같이 이용자의 개인정보를 처리합니다.</p>
+            <p>회사는 「개인정보 보호법」 등 관련 법령을 준수하며, 이용자의 권익 보호를 위해 최선을 다하고 있습니다. 본 방침은 앱 내 설정 메뉴 및 공식 웹페이지에 공개하여 상시 열람 가능하도록 조치하고 있습니다.</p>
+
+            <h2>2. 수집하는 개인정보 항목 및 방법</h2>
+            <h3>가. 수집하는 항목</h3>
+            <ol>
+                <li><strong>계정 연동 시:</strong> 플랫폼 계정(Google Play Games, Apple Game Center 등) 식별자(UID), 이메일, 닉네임 (게스트 로그인 시 임의 기기 식별자)</li>
+                <li><strong>서비스 이용 중 자동 수집:</strong> 기기 모델명, OS 버전, 광고 식별자(ADID/IDFA), 언어/국가 설정, 플레이 기록, 게임 진행 상태, 오류 및 충돌 로그</li>
+                <li><strong>인앱 결제 시:</strong> 주문 번호, 결제 일시, 구매 상품명, 영수증 검증 데이터 (※ 카드 정보 등 실제 결제 수단 정보는 스토어에서 처리하며 회사는 수집·저장하지 않음)</li>
+                <li><strong>고객 문의 시:</strong> 이메일 주소, 문의 내용 및 상담 내역</li>
+            </ol>
+            <h3>나. 수집 방법</h3>
+            <p>앱 실행 및 서비스 이용 중 자동 수집, 계정 연동 및 고객 상담 접수 시 이용자 제공</p>
+
+            <h2>3. 개인정보의 이용 목적</h2>
+            <ul>
+                <li>게임 서비스 제공 및 플레이 데이터 동기화</li>
+                <li>오류 수정, 앱 안정성 개선 및 고객 불만 응대</li>
+                <li>비인가 프로그램 사용 방지 등 부정 이용 방지</li>
+                <li>인앱 구매 상품 지급 및 영수증 유효성 검증</li>
+            </ul>
+
+            <h2>4. 제3자 서비스 및 외부 라이브러리(SDK)</h2>
+            <table>
+                <thead>
+                    <tr><th>서비스 제공자</th><th>목적</th><th>처리 항목</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Google LLC (Firebase / AdMob / Play Games)</td>
+                        <td>계정 로그인, 앱 분석, 오류 진단, 광고 제공</td>
+                        <td>기기 식별자, 광고 ID, 충돌 로그</td>
+                    </tr>
+                    <tr>
+                        <td>Apple Inc. (Game Center / App Store)</td>
+                        <td>계정 로그인, 인앱 결제 검증</td>
+                        <td>Apple 계정 식별자, 결제 영수증 식별값</td>
+                    </tr>
+                    <tr>
+                        <td>Unity Technologies</td>
+                        <td>게임 엔진 구동 및 크래시 진단</td>
+                        <td>기기 사양 정보, OS 정보, 오류 로그</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>5. 개인정보의 보유 및 파기</h2>
+            <p>회사는 개인정보 수집 목적이 달성되면 지체 없이 파기합니다. 단, 전자상거래법 등 관계 법령에 따라 보존 의무가 있는 경우 법정 기간(대금결제/계약 기록 5년, 분쟁 처리 3년, 접속 로그 3개월) 동안 안전하게 보관 후 파기합니다.</p>
+
+            <h2>6. 이용자의 권리와 행사 방법 (계정 및 데이터 삭제)</h2>
+            <div class="notice-box">
+                <strong>계정 및 데이터 삭제 권리 안내:</strong><br>
+                이용자는 언제든지 자신의 개인정보 열람, 정정, 삭제(회원 탈퇴)를 요구할 권리가 있습니다.
+            </div>
+            <ul>
+                <li><strong>앱 내 탈퇴:</strong> 게임 내 설정 메뉴의 '계정 삭제' 또는 '회원 탈퇴' 기능을 통해 즉시 삭제 신청 가능</li>
+                <li><strong>이메일 요청:</strong> 앱 삭제 등으로 직접 탈퇴가 곤란한 경우, 아래 책임자 이메일로 요청하시면 본인 확인 후 즉시 파기 조치합니다.</li>
+            </ul>
+
+            <h2>7. 아동의 개인정보 보호</h2>
+            <p>회사는 만 14세 미만 아동의 개인정보를 법정대리인의 동의 없이 의도적으로 수집하지 않으며, 해당 정보 인지 시 즉시 파기합니다.</p>
+
+            <h2>8. 개인정보 보호책임자 및 문의처</h2>
+            <table>
+                <tr><th style="width:30%;">책임자</th><td>최석환 (TheDuckGames 대표)</td></tr>
+                <tr><th>문의 이메일</th><td><a href="mailto:stannum514@gmail.com">stannum514@gmail.com</a></td></tr>
+            </table>
+        </div>
+
+        <!-- ================= [KO] 한국어 서비스 이용약관 ================= -->
+        <div id="view-ko-terms" class="section-view">
+            <h2>제1조 (목적)</h2>
+            <p>본 약관은 TheDuckGames(이하 ‘회사’)가 제공하는 모바일 게임 서비스의 이용과 관련하여 회사와 이용자 간의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.</p>
+
+            <h2>제2조 (약관의 효력)</h2>
+            <p>본 약관은 이용자가 앱을 다운로드 및 실행함으로써 효력이 발생합니다.</p>
+
+            <h2>제3조 (유료 콘텐츠 및 인앱 결제)</h2>
+            <ol>
+                <li>유료 콘텐츠의 구매는 Apple App Store 및 Google Play Store 등 플랫폼 사업자의 인앱 결제 시스템 정책을 따릅니다.</li>
+                <li>환불 및 청약철회는 전자상거래법 및 해당 플랫폼 스토어의 환불 정책에 따릅니다.</li>
+            </ol>
+
+            <h2>제4조 (이용자의 의무 및 제재)</h2>
+            <p>이용자는 버그 악용, 비인가 치트 프로그램 사용, 타인의 정보 도용, 저작권 침해 등 서비스의 정상적인 운영을 방해하는 행위를 하여서는 안 되며, 위반 시 서비스 이용이 제한될 수 있습니다.</p>
+
+            <h2>제5조 (면책 조항)</h2>
+            <p>천재지변, 서비스 점검, 통신 장애 등 불가항력적인 사유나 이용자의 귀책사유로 인한 장애에 대해서는 관련 법령에 반하지 않는 한 책임을 부담하지 않습니다.</p>
+
+            <h2>제6조 (문의처)</h2>
+            <p>문의: <a href="mailto:stannum514@gmail.com">stannum514@gmail.com</a></p>
+        </div>
+
+        <!-- ================= [EN] English Privacy Policy ================= -->
+        <div id="view-en-privacy" class="section-view">
+            <h2>1. Overview</h2>
+            <p>TheDuckGames ("Company", "we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile game application (the "Service").</p>
+            <p>We ensure compliance with applicable privacy and data protection laws (such as GDPR, CCPA, and app store policies). You can review this policy anytime in the in-game Settings menu or on this official webpage.</p>
+
+            <h2>2. Information We Collect</h2>
+            <h3>A. Information You Provide to Us</h3>
+            <ul>
+                <li><strong>Account Linking:</strong> When you sign in using platform services (such as Google Play Games or Apple Game Center), we may receive your platform User ID (UID), email address, and public profile nickname. (For guest accounts, a randomized device-bound identifier is generated).</li>
+                <li><strong>Customer Support:</strong> Email address and communication history when you contact support.</li>
+            </ul>
+
+            <h3>B. Automatically Collected Information</h3>
+            <ul>
+                <li><strong>Device Information:</strong> Device model, operating system version, country/language settings, unique device identifiers.</li>
+                <li><strong>Advertising Identifiers:</strong> Advertising ID (Google ADID for Android, IDFA for iOS) for analytics and advertising purposes.</li>
+                <li><strong>Gameplay & Log Data:</strong> Game progress, stage records, timestamps, crash reports, and error diagnosis logs.</li>
+                <li><strong>Purchase Records:</strong> Transaction/Order ID, product name, purchase timestamp, and verification token for in-app purchases. (<em>Note: Credit card numbers and financial credentials are processed directly by Apple/Google and are NEVER stored or accessed by us.</em>)</li>
+            </ul>
+
+            <h2>3. How We Use Your Information</h2>
+            <ul>
+                <li>To provide, maintain, and save your game progress and state.</li>
+                <li>To verify and fulfill in-app purchases.</li>
+                <li>To respond to user inquiries and deliver customer support.</li>
+                <li>To detect, prevent, and address technical issues, bugs, and fraudulent activity (e.g., unauthorized cheat tools).</li>
+            </ul>
+
+            <h2>4. Third-Party Services and SDKs</h2>
+            <p>We may share minimal data with trusted third-party service providers to deliver essential features, analytics, and advertising:</p>
+            <table>
+                <thead>
+                    <tr><th>Provider</th><th>Purpose</th><th>Data Processed</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Google LLC (Firebase / AdMob / Play Games)</td>
+                        <td>Account authentication, analytics, crash reporting, ads</td>
+                        <td>Device identifiers, Advertising ID, crash logs</td>
+                    </tr>
+                    <tr>
+                        <td>Apple Inc. (Game Center / App Store)</td>
+                        <td>Account authentication, in-app purchase verification</td>
+                        <td>Apple User ID, receipt validation tokens</td>
+                    </tr>
+                    <tr>
+                        <td>Unity Technologies</td>
+                        <td>Game engine operations, performance diagnostics</td>
+                        <td>Device specs, OS version, diagnostic logs</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>5. Data Retention and Deletion</h2>
+            <p>We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, or as required by applicable commercial and financial statutory retention periods.</p>
+
+            <h2>6. User Rights (Account & Data Deletion)</h2>
+            <div class="notice-box">
+                <strong>Your Right to Account & Data Deletion:</strong><br>
+                You have the right to access, rectify, or request permanent deletion of your account and personal data at any time.
+            </div>
+            <ul>
+                <li><strong>In-App Deletion:</strong> You can delete your account directly via the in-game Settings > 'Delete Account' button.</li>
+                <li><strong>Email Request:</strong> If you have already uninstalled the app or cannot access it, you can request immediate data deletion by emailing us at <a href="mailto:stannum514@gmail.com">stannum514@gmail.com</a>. We will process your request promptly upon verifying your identity.</li>
+            </ul>
+
+            <h2>7. Children's Privacy (COPPA / GDPR)</h2>
+            <p>Our Service is not directed to children under the age of 13 (or under 16 where required by regional law). We do not knowingly collect personal data from children. If we discover that a child has provided us with personal information, we will delete it immediately.</p>
+
+            <h2>8. Contact Information</h2>
+            <p>If you have any questions, comments, or data deletion requests regarding this Privacy Policy, please contact our Privacy Representative:</p>
+            <table>
+                <tr><th style="width:30%;">Representative</th><td>Seokhwan Choi (Lead Developer, TheDuckGames)</td></tr>
+                <tr><th>Contact Email</th><td><a href="mailto:stannum514@gmail.com">stannum514@gmail.com</a></td></tr>
+            </table>
+        </div>
+
+        <!-- ================= [EN] English Terms of Service ================= -->
+        <div id="view-en-terms" class="section-view">
+            <h2>Article 1 (Purpose)</h2>
+            <p>These Terms of Service ("Terms") govern your access to and use of the mobile games and related services (the "Service") provided by TheDuckGames ("Company").</p>
+
+            <h2>Article 2 (Acceptance and Modifications)</h2>
+            <p>By downloading, installing, or playing the Service, you agree to be bound by these Terms. We may update these Terms from time to time, with prior notice given via in-game announcements or on this webpage.</p>
+
+            <h2>Article 3 (In-App Purchases and Refunds)</h2>
+            <ol>
+                <li>Virtual currency and in-game items can be purchased through the payment systems provided by the platform operators (Apple App Store, Google Play Store).</li>
+                <li>Billing, cancellation, and refund requests are subject to the statutory consumer protection laws and the respective policies of Apple Inc. or Google LLC.</li>
+            </ol>
+
+            <h2>Article 4 (User Conduct and Restrictions)</h2>
+            <p>You agree not to engage in unauthorized actions, including: exploiting bugs, modifying game memory or data, using unauthorized third-party automation tools/cheats, infringing upon intellectual property rights, or disrupting the gameplay experience of other users. Violations may result in suspension or termination of your account.</p>
+
+            <h2>Article 5 (Disclaimer & Limitation of Liability)</h2>
+            <p>The Service is provided on an "AS IS" and "AS AVAILABLE" basis. To the fullest extent permitted by applicable law, the Company disclaims all warranties and shall not be liable for any indirect, incidental, or consequential damages resulting from your access to or inability to use the Service.</p>
+
+            <h2>Article 6 (Governing Law)</h2>
+            <p>These Terms shall be governed by and construed in accordance with the laws of the Republic of Korea, without regard to its conflict of law provisions.</p>
+
+            <h2>Article 7 (Contact Us)</h2>
+            <p>For questions or support regarding these Terms, please reach out to: <a href="mailto:stannum514@gmail.com">stannum514@gmail.com</a></p>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 TheDuckGames. All rights reserved.
+    </footer>
+</div>
+
+<script>
+    // 현재 상태 관리
+    let currentLang = 'ko';
+    let currentTab = 'privacy';
+
+    // 텍스트 정의
+    const strings = {
+        ko: {
+            title: "TheDuckGames 공식 정책 안내",
+            date: "최종 개정일: 2026년 9월 8일",
+            tabPrivacy: "개인정보 처리방침",
+            tabTerms: "서비스 이용약관"
+        },
+        en: {
+            title: "TheDuckGames Official Policy & Terms",
+            date: "Last Updated: September 8, 2026",
+            tabPrivacy: "Privacy Policy",
+            tabTerms: "Terms of Service"
+        }
+    };
+
+    function updateUI() {
+        // 헤더 텍스트 갱신
+        document.getElementById('headerTitle').textContent = strings[currentLang].title;
+        document.getElementById('headerDate').textContent = strings[currentLang].date;
+        document.getElementById('tabPrivacy').textContent = strings[currentLang].tabPrivacy;
+        document.getElementById('tabTerms').textContent = strings[currentLang].tabTerms;
+
+        // 언어 버튼 활성화 표시
+        document.getElementById('btnKo').classList.toggle('active', currentLang === 'ko');
+        document.getElementById('btnEn').classList.toggle('active', currentLang === 'en');
+
+        // 탭 버튼 활성화 표시
+        document.getElementById('tabPrivacy').classList.toggle('active', currentTab === 'privacy');
+        document.getElementById('tabTerms').classList.toggle('active', currentTab === 'terms');
+
+        // 콘텐츠 뷰 전환
+        document.querySelectorAll('.section-view').forEach(el => el.classList.remove('active'));
+        const targetView = document.getElementById(`view-${currentLang}-${currentTab}`);
+        if (targetView) {
+            targetView.classList.add('active');
+        }
+
+        // 주소창 해시 동기화 (#privacy, #terms, #privacy-en, #terms-en)
+        let hash = currentTab;
+        if (currentLang === 'en') hash += '-en';
+        history.replaceState(null, null, '#' + hash);
+    }
+
+    function setLanguage(lang) {
+        currentLang = lang;
+        updateUI();
+    }
+
+    function setTab(tab) {
+        currentTab = tab;
+        updateUI();
+    }
+
+    // 초기 로딩 시 URL 해시 및 브라우저 언어 감지
+    window.addEventListener('DOMContentLoaded', () => {
+        const hash = window.location.hash.replace('#', '').toLowerCase();
+
+        if (hash === 'privacy-en') {
+            currentLang = 'en';
+            currentTab = 'privacy';
+        } else if (hash === 'terms-en') {
+            currentLang = 'en';
+            currentTab = 'terms';
+        } else if (hash === 'terms' || hash === 'terms-ko') {
+            currentLang = 'ko';
+            currentTab = 'terms';
+        } else if (hash === 'privacy' || hash === 'privacy-ko') {
+            currentLang = 'ko';
+            currentTab = 'privacy';
+        } else {
+            // 해시가 없을 경우: 브라우저 언어가 한국어가 아니면 영어를 기본값으로 설정 (해외 심사관 대응)
+            const userLang = navigator.language || navigator.userLanguage;
+            if (userLang && !userLang.startsWith('ko')) {
+                currentLang = 'en';
+            } else {
+                currentLang = 'ko';
+            }
+            currentTab = 'privacy';
+        }
+
+        updateUI();
+    });
+</script>
+
+</body>
+</html>
